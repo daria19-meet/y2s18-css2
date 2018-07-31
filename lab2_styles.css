@@ -11,8 +11,35 @@ h1 {
 p {
     color: green;
     font-size: 24pt;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+p:hover{
+	opacity: 1.5;
 }
 
 a {
     color:red;
+    transition: margin 2s;
 }
+
+a:hover{
+	background: blue;
+	margin: 100px;
+}
+#important_paragraph:hover{
+	background: yellow; font-size: 40px;
+}
+ 
+/*.less:hover{
+	color: blue;	
+}*/
+
+div#hidden_div{
+	display: none;
+}
+
+#span_cover:hover + #hidden_div {
+    display: block;
+}	
